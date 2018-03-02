@@ -1,0 +1,3 @@
+target:
+  - name: ctrl-alt-del.target
+    masked: no

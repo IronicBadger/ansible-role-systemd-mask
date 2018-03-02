@@ -1,0 +1,8 @@
+---
+
+- name: Mask / unmask specified systemd target
+  systemd: 
+    name: "{{ item.name }}"
+    masked: "{{ item.masked }}"
+  with_items:
+    "{{ target }}"
